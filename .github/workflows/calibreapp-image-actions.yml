@@ -1,10 +1,5 @@
 name: Compress images
-on:
-  pull_request:
-    paths:
-      - '**.jpg'
-      - '**.png'
-      - '**.webp'
+on: [push]
 jobs:
   build:
     name: calibreapp/image-actions

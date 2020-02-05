@@ -33,8 +33,7 @@ Under the hood, the [AWS Amplify Console][amplify-console] leverages [Amazon S3 
     The process takes a couple of minutes for Amplify Console to create the necessary resources and to deploy your code.
 
     ![Amplify Deployment](data/images/readme/amplify-console-deploy-status.png)
-
-Once completed, click on the site image to open your static site in your browser.
+1. Once completed, click on the site image to open your static site in your browser.
 
     ![Hugo's quickstart with Book theme homepage](data/images/readme/homepage.png)
 

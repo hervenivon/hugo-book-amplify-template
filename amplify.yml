@@ -2,13 +2,13 @@ version: 1.0
 env:
   variables:
     HUGOVERSION: v0.64.0
-    HUGOINSTALL: hugo_extended_$HUGOVERSION_Linux-64bit.tar.gz
+    HUGOINSTALL: hugo_extended_0.64.0_Linux-64bit.tar.gz
 frontend:
   phases:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
-        - wget https://github.com/gohugoio/hugo/releases/download/v$HUGOVERSION/$HUGOINSTALL
+        - wget https://github.com/gohugoio/hugo/releases/download/$HUGOVERSION/$HUGOINSTALL
         - tar -xf $HUGOINSTALL
         - mv hugo /usr/bin/hugo
         - rm -rf $HUGOINSTALL

@@ -41,6 +41,18 @@ If you click on the link for *Master* you'll see various pieces of information a
 
 ![Amplify Client Renderings](data/images/readme/amplify-renderings.png)
 
+## 🛠 Development
+
+Once you have configured the Amplify Console deployment process from the previous paragraph, every time you push or you do a pull request, the Amplify Console will trigger a build and deployment pipeline.
+
+If you want to see locally what is your impact on your `markdown` content change, please execute the following in your favorite terminal (with the Hugo Pre requisites applied).
+
+```bash
+hugo server -D
+```
+
+It will compiled your static web site content, include draft in process and launch a live reloading local server serving your content.
+
 ## ⭐️ Conclusion
 
 💡 [AWS Amplify Console][amplify-console] makes it really easy to deploy static websites following a continuous integration and delivery model. The AWS Amplify Console also has capabilities to build full stack serverless applications. To discover it, you can deploy one of the [Fullstack serverless example projects][amplify-getting-started], in a couple of minutes, you'll fork and get a fully working operational CI/CD serverless web application, give it a try 😉.
@@ -55,5 +67,6 @@ If you have any suggestion, or want more details, do not hesitate to reach out!
 [amplify-getting-started]: https://aws.amazon.com/amplify/console/getting-started/
 [hugo-amplify-hosting]: https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/
 [hugo-quickstart]: https://gohugo.io/getting-started/quick-start/
+[hugo-prerequisites]: https://gohugo.io/getting-started/installing/
 [hugo-theme-book]: https://themes.gohugo.io/hugo-book/
 [s3-static-hosting]: https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html

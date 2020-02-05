@@ -19,12 +19,15 @@ Under the hood, the [AWS Amplify Console][amplify-console] leverages [Amazon S3 
 
 1. Launch the [The AWS Amplify Console dashboard][amplify-console-dashboard]
 1. Click **Get Started** under Deploy with Amplify Console
-1. Select the *Repository service provider* used today and select **Next**
-    - As this repository is on GitHub, and you have likely forked it, you'll need to authorize AWS Amplify to access your GitHub account
+1. Select the *Repository service provider* and select **Next**
+    - As this repository is on GitHub, and you have likely forked it, you'll need to select github and to authorize AWS Amplify to access your GitHub account
 1. From the dropdown select the *Repository* and *Branch* of your fork
 
     ![Amplify Repository configuration](data/images/readme/amplify-console-repository-configuration.png)
 1. On the "Configure build settings" page leave all the defaults and select **Next**
+    - AWS Amplify should have detected the `amplify.yml` settings.
+
+    ![Amplify Repository configuration](data/images/readme/amplify-console-build-settings.png)
 1. On the "Review" page select **Save and deploy**
 
     The process takes a couple of minutes for Amplify Console to create the necessary resources and to deploy your code.
@@ -33,7 +36,7 @@ Under the hood, the [AWS Amplify Console][amplify-console] leverages [Amazon S3 
 
 Once completed, click on the site image to open your static site in your browser.
 
-![Hugo's quickstart with Book theme homepage](data/images/readme/homepage.png)
+    ![Hugo's quickstart with Book theme homepage](data/images/readme/homepage.png)
 
 If you click on the link for *Master* you'll see various pieces of information about your website deployment, including sample renderings on various platforms:
 
